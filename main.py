@@ -5,5 +5,5 @@ if __name__ == "__main__":
     create_app
     app.run(debug=True)
 
-env = Environment(loader=FileSystemLoader(searchpath='C:\website\Templates')
-template = env.get_template('login.html')
+        template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),autoescape = True)
