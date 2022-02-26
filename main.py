@@ -7,5 +7,5 @@ if __name__ == "__main__":
 
 import os
 
-template_dir = os.path.join(os.path.dirname(__base.html__), 'Templates')
+template_dir = os.path.join(os.path.dirname(base.html), 'Templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir),autoescape = True)
